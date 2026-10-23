@@ -55,3 +55,18 @@ git push gitlab feature/task-api-implementation
 # After merging Pull Request (GitHub) / Merge Request (GitLab) online:
 git checkout main
 git pull origin main
+
+
+## 🐳 Docker Deployment Setup
+
+### 1. Build Docker Image
+```bash
+docker build -t task-manager-api .
+
+
+### 2. Run Container
+docker run -d -p 8000:8000 --name task-api-container task-manager-api
+
+### 3. Verify Container Status
+docker ps
+git pull origin main
