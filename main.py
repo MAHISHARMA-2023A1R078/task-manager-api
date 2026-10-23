@@ -4,7 +4,7 @@ from typing import List, Optional
 import uuid
 
 app = FastAPI(
-    title="Task Manager API",
+    title="Task Manager REST API using python and Fast API",
     description="In-memory Task Manager REST API built with FastAPI",
     version="1.0.0"
 )
@@ -21,7 +21,7 @@ class TaskResponse(BaseModel):
     completed: bool
 
 # In-memory storage
-tasks_db: dict[str, dict] = {}
+tasks_db: dict[str, dict] ={}
 
 @app.get("/health", status_code=status.HTTP_200_OK, tags=["Health"])
 def health_check():
