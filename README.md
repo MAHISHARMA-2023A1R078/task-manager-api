@@ -69,3 +69,4 @@ docker run -d -p 8000:8000 --name task-api-container task-manager-api
 
 ### 3. Verify Container Status
 docker ps
+git pull origin main
